@@ -1,0 +1,26 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "position": "Software Developer"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "position": "UX Designer"
+      },
+      {
+        "id": 3,
+        "name": "Bob Johnson",
+        "position": "Data Analyst"
+      }
+    ],
+    "company": {
+      "name": "TechCo",
+      "location": "Silicon Valley",
+      "foundedYear": 2000
+    },
+    "tags": ["technology", "innovation", "startups"]
+  }
+  

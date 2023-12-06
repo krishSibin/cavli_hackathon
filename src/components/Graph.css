@@ -1,0 +1,23 @@
+/* Define styles for the graph component */
+.graph {
+    border: 2px solid #090707;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #130909;
+  }
+  
+  .graph h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .graph p {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .graph strong {
+    color: #007bff;
+    /* Adjust any other styles as needed */
+  }
+  

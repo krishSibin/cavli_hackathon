@@ -1,0 +1,137 @@
+.upload {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navupload{
+    width: 100%;
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.uploadHead{
+    margin: 0;
+}
+.uploadbut ,.uploadbut2{
+    width: 150px;
+    height: 35px;
+    background-color: #03aa09;
+    border: none;
+    margin-top: 0;
+    font-size: 15px;
+    
+}
+.uploadbut:hover{
+    background-color: #019206;
+}
+.uploadbut:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #019206;
+}
+.uploadbut2{
+    margin: 0;
+    height: 38px;
+}
+
+.fileList{
+    margin-top: 2%;
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    /* padding: 0 5% 0 5%; */
+    height: 70vh;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fileList::-webkit-scrollbar {
+    width: 0; /* Set width to 0 */
+  }
+.files{
+        /* background-color: blue; */
+        width: 80vw;
+        height: 50px;
+        display: flex;
+        /* border-top: 1px solid #494949; */
+        border-bottom: 1px solid #494949;
+        /* padding-left: 2%; */
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        cursor: pointer;
+        margin-top: 10px;
+    transition: .1s ease-in-out;
+        
+
+}
+.files:hover{
+    transform: scale(1.01);
+    background-color: #4949495a;
+    transition: .1s ease-in-out;
+}
+.filename{
+    margin-left: 2%;
+}
+.listh1{
+    font-size: 20px;
+}
+.horizontalsep{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+}
+.mobicon{
+    display: none;
+}
+
+.graphPage{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .mobicon{
+        display: block;
+        height: 23px;
+        width: 23px;
+    }
+    .desktext{
+        display: none;
+    }
+    .uploadbut{
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navupload{
+        margin-top: 8%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 5%;
+       
+    }
+    .filename {
+        margin-left: 13%;
+        font-size: 16px;
+    }
+    .files{
+        width: 100vw;
+    }
+}

@@ -1,0 +1,47 @@
+//template for adding data
+import React from 'react';
+import AWS from 'aws-sdk';
+
+function S3Uploader() {
+  const handleFileUpload = async (event) => {
+    const file = event.target.files[0];
+
+    // Initialize AWS SDK configuration
+    AWS.config.update({
+      accessKeyId: 'AKIA2E76VMBFZS337UX7',
+      secretAccessKey: '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',
+      region: 'ap-south-1' // Corrected AWS region code for Asia Pacific (Mumbai)
+    });
+
+    const s3 = new AWS.S3();
+
+    // Configure the parameters for the S3 upload
+    const params = {
+      Bucket: 'reactuploaderapp',
+      Key: file.name,
+      Body: file,
+      ContentType: 'application/json'
+    };
+
+    // Upload file to S3
+    try {
+      const data = await s3.upload(params).promise();
+      console.log('File uploaded successfully:', data.Location);
+      alert('File uploaded successfully!');
+      // You can perform further actions after successful upload
+    } catch (error) {
+      console.error('Error uploading file:', error);
+      alert('Error uploading file!');
+      // Handle error
+    }
+  };
+
+  return (
+    <div className="App">
+      <h1>Upload JSON File to S3</h1>
+      <input type="file" accept=".json" onChange={handleFileUpload} />
+    </div>
+  );
+}
+
+export default S3Uploader;

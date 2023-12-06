@@ -1,0 +1,140 @@
+.home{
+    color: rgb(9, 8, 8);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.homeBodyLeft{
+    padding-left: 5%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.homeH1{
+    font-weight: 600;
+    margin: 0;
+    font-size: 80px;
+    color: white;
+}
+.homeP{
+    margin: 0;
+    color: white;
+    font-size: 33px;
+    text-align: left;
+}
+.smallp{
+    color: white;
+    text-align: left;
+ width: 90%;
+}
+.getStart{
+    height: 40px;
+    border: none;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #494949;
+    color: white;
+    transition: .1s ease-in-out;
+}
+.getStart:hover{
+    transition: .1s ease-in-out;
+    font-size: 15px;
+    background-color: #019206;
+    color: white;
+}
+.sepparation{
+    height: 60%;
+    width: 1.5px;
+    background-color: #494949;
+}
+.homeBodyRight{
+    width: 48%;
+    /* padding: 0%; */
+    /* background-color: red; */
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.img1,.img2, .img3{
+    
+    margin: 10px;
+}
+
+.homePic1{
+    width: 20vw;
+}
+.homePic2{
+    width: 18vw;
+}
+.homePic3{
+    width: 15vw;
+    margin-left: -100px;
+}
+
+@media only screen and (max-width:1082px){
+    .img1, .img2, .img3 {
+        margin: 22px;
+    }
+}
+
+@media only screen and (max-width:970px){
+    .img1, .img2, .img3 {
+        margin: 25px;
+    }
+}
+@media only screen and (max-width:850px){
+    
+    .sepparation{
+        display: none;
+    }
+    .homeBodyLeft {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .smallp {
+     
+        width: 76%;
+        text-align: center;
+    }
+    
+    .homeBodyRight {
+        display: none;
+        
+    }
+    
+    
+}
+@media only screen and (max-width:600px){
+    .homeH1{
+        font-size: 50px;
+    }
+    .homeP{
+        font-size: 25px;
+    }
+    .smallp{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:600px){
+    .homeH1{
+        font-size: 40px;
+    }
+    .homeP{
+        font-size: 20px;
+    }
+    .smallp{
+        font-size: 13px;
+    }
+}

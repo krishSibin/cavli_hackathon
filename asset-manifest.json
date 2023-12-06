@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cavli_hackathon/static/css/main.a2b54294.css",
+    "main.js": "/cavli_hackathon/static/js/main.48f1e33c.js",
+    "static/media/img1.png": "/cavli_hackathon/static/media/img1.b2f32b132309f7edae70.png",
+    "static/media/img2.png": "/cavli_hackathon/static/media/img2.372c00903ea5eed30cd9.png",
+    "static/media/img3.png": "/cavli_hackathon/static/media/img3.e085c88a91e52656c4c2.png",
+    "index.html": "/cavli_hackathon/index.html",
+    "main.a2b54294.css.map": "/cavli_hackathon/static/css/main.a2b54294.css.map",
+    "main.48f1e33c.js.map": "/cavli_hackathon/static/js/main.48f1e33c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2b54294.css",
+    "static/js/main.48f1e33c.js"
+  ]
+}
